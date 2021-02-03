@@ -1,0 +1,20 @@
+{
+  "name": "boat-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "json-server --watch persons.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrshrayank/Boat-Clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hrshrayank/Boat-Clone/issues"
+  },
+  "homepage": "https://github.com/hrshrayank/Boat-Clone#readme"
+}

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High5boAtheads</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+   <style>
+        .container {
+            background-color: rgb(14, 12, 12);
+            text-align: center;
+            width: 100%;
+            /* margin-top: 80px; */
+        }
+        nav {
+            height: 75px;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .logo img {
+            width: 100px;
+            padding-top: 10px;
+        }
+
+        .navbar_categories {
+            display: flex;
+            color: white;
+            font-weight: bold;
+            padding-top: 25px;
+        }
+
+        .navbar_categories * {
+            margin-right: 8px;
+            color: #F5F5F5;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 15px;
+        }
+
+        .navbar_categories span {
+            color: white;
+            font-weight: bold;
+        }
+
+        .line {
+            height: 25px;
+            width: 2px;
+            background-color: #EA2127;
+            margin-top: -2px;
+        }
+
+        .navbar_categories i {
+            font-size: 12px;
+        }
+
+        .navbar_search {
+            margin-top: 15px;
+        }
+
+        .navbar_search input {
+            width: 250px;
+            padding: 7px;
+            border-radius: 20px;
+            border: 1px solid white;
+            background-color: black;
+            color: white;
+            outline: none;
+            font-size: 15px;
+            padding-left: 10px;
+        }
+
+        .navbar_search_btn {
+            position: absolute;
+            top: 10;
+            background: transparent;
+            color: #666;
+            height: 25px;
+            line-height: 2;
+            right: 8%;
+            font-size: 15px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .navbar_options {
+            color: black;
+        }
+
+        .navbar_options {
+            margin-left: 160px;
+            margin-top: 5px;
+        }
+
+        .navbar_options img{
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .display_shop_categories {
+            display: none;
+            margin-top: 50px;
+            margin-left: -30%;
+            position: absolute;
+            background-color: #1E1E1E;
+            transition: 0.5s;
+            width: 100%;
+        }
+
+        .display_shop_categories img {
+            width: 295px;
+            margin-top: 20px;
+            margin-left: 20px;
+            transition: 0.5s;
+        }
+
+        .shop {
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        .shop:hover + .display_shop_categories {
+            display: block;
+            width: 100%;
+            background-color: #1E1E1E;
+            transition: 0.5s;
+        }
+
+        .display_shop_categories:hover {
+            display: block;
+            cursor: pointer;
+            width: 100%;
+            transition: 0.5s;
+        }
+
+        .more_options {
+            margin-top: 50px;
+            flex-direction: column;
+            position: absolute;
+            display: none;
+            line-height: 35px;
+            background: #1E1E1E;
+            padding: 10px 15px;
+            margin-left: 300px;
+        }
+
+        .more_options a:hover {
+            color: red;
+        }
+
+        .more:hover + .more_options{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .more_options:hover {
+            display: flex;
+        }
+
+        .navbar_options img{
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .img1 {
+            max-width: 100%;
+             height: auto;
+        }
+        .angle {
+            font-size:60px;
+            cursor: pointer;
+        }
+        .angle-hover {
+            background-color: whitesmoke
+        }
+        .videos {
+            margin: 50px;
+        }
+        .box3 {
+            background: url(https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Here-from-our-partners.jpg?v=1611911029);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 40px 30px;
+            align-items: center;
+            line-height: normal;
+            }
+         .pbox {
+            text-align: left;
+            width: 35%;
+            /* border: solid white; */
+            margin-left: 40px;
+            margin-top: 150px;
+        }
+        .insidebox{
+            display: flex;
+        }
+        .redhigh5 {
+          text-align: left;
+          margin-top: 70px;
+          margin-left: 40px;
+       
+        }
+        .pbox2{
+            width: 30%;
+            margin-left: 200px;
+        }
+        .pbox2 p{
+            color: whitesmoke;
+        }
+       .right{
+           right:-80px !important;
+       }
+       .left{
+           left:-80px !important;
+       }
+       .persontext {
+           text-align: left;
+       }
+       .marguee marquee{
+            color: white;
+            font-size: 30px;
+            
+        }
+        marquee span:nth-child(odd){
+            font-family: "castellar";
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+            letter-spacing: 5px;
+        }
+        marquee span:nth-child(even){
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 25px;
+        }
+       .uses {
+           display: flex;
+           position: relative;
+           left: 150px;
+           margin-top: 30px;
+       }
+       .sales {
+           display: flex;
+           margin-left: 150px;
+       }
+       .shipping{
+           width: 50px;
+           height: 30px;
+       }
+       .p {
+        text-align: left;
+        color: #ffffff;
+        font-weight: bold;
+        position: relative;
+        left: 19px;
+        top: 7px;
+       }
+       .footer {
+            width: 100%;
+            background-color: black;
+            display: flex;
+            height: 400px;
+            margin-top: 50px;
+            font-size: 14px;
+            color: #868686;
+            font-weight: 500;
+        }
+
+        .email {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            margin-left: 40px;
+        }
+
+        .shop_links, .help, .company {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .email img{
+            width: 100px;
+        }
+
+        .email p {
+            margin-top: 30px;
+        }
+
+        .email input {
+            padding: 15px;
+            width: 200px;
+            background-color: black;
+            border: 1px solid white;
+            border-radius: 10px;
+            margin-top: 10px;
+            outline: none;
+            color: white;
+        }
+
+        .subscribe {
+            padding: 12px;
+            width: 120px;
+            background-color: black;
+            color: white;
+            border: 1px solid red;
+            margin-top: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .subscribe:hover {
+            background-color: red;
+            outline: none;
+        }
+
+        .footer h2 {
+            color: white;
+            padding-left: 40px;
+        }
+
+        .footer ul {
+            list-style: none;
+            line-height: 28px;
+        }
+
+        .footer li {
+            cursor: pointer;
+        }
+        .footer li:hover {
+            color: red;
+        }
+
+        /* Social links */
+        .social_links {
+            width: 100%;
+            height: 80px;
+            color: rgb(228, 228, 228);
+        }
+        .social_links i {
+            font-size: 28px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .social_links i:hover {
+            color: white;
+        }
+
+        .social_links div {
+            margin-left: 40px;
+        }
+
+        .pay_download {
+            width: 100%;
+            margin-top: 20px;
+            height: 100px;
+            display: flex;
+        }
+
+        .pay_links {
+            margin-left: 35px;
+        }
+
+        .download_links {
+            color: white;
+            margin-left: 470px;
+        }
+
+        .download_links img {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo"><a href="#"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x.png?v=1600753267"></a></div>
+
+            <div class="navbar_categories">
+                <span class="shop">Shop &#9662</span>
+                <div class="display_shop_categories">
+                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/category_01_360x.png?v=1602142415"></a>
+                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/category_02_360x.png?v=1602142415"></a>
+                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/category_03_360x.png?v=1602142415"></a>
+                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/category_04_360x.png?v=1602142415"></a>
+                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/category_05_360x.png?v=1602142415"></a>
+                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/category_06_360x.png?v=1602142415"></a>
+                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/New-Category-Banners_07_360x.png?v=1611569935"></a>
+                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/category_08_360x.png?v=1602142415"></a>
+                </div>
+                <div class="line"></div>
+                <a href="#">High5boAtheads</a>
+                <div class="line"></div>
+                <a href="#">Rock In India</a>
+                <div class="line"></div>
+                <a href="#" class="more">More &#9662</a>
+                <div class="more_options">
+                    <a href="#">Meet the boAtheads</a>
+                    <a href="#">boAt x Sunburn</a>
+                    <a href="#">boAt x LFW</a>
+                    <a href="#">boAt x IPL</a>
+                </div>
+            </div>
+
+            <div class="navbar_search">
+                <div>
+                    <input type="text" name="search">
+                    <button class="navbar_search_btn" id="navbar_search_btn"><span><i class="fa fa-search"></i></span></button>
+                    <div class="navbar_options">
+                        <a href="#"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/gift.png?v=1606314809"></a>
+                        <a href="#"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/user_1.png?v=1606314823"></a>
+                        <a href="#"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/cart.png?v=1606314839"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <a href="#">
+                <img class="img1" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/HIGH-5-boAtheads_banner.jpg?v=1611911029"/>
+            </a>
+        </div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <video width="800" controls>
+                        <source src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/video_2_neha_banner.mp4?v=1611916666" type="video/mp4">
+                    </video>
+                </div>
+                <div class="item">
+                    <video width="800" controls>
+                        <source src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/video_3_kl_rahul_banner.mp4?v=1611916660" type="video/mp4">
+                    </video>
+                </div>
+                <div class="item">
+                    <video width="800" class="videos" controls>
+                        <source src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/video_4_shikhar_dhawan_banner.mp4?v=1611916666" type="video/mp4">
+                    </video>
+                    </div>
+                    <div class="item">
+                    <video width="800" class="videos" controls>
+                        <source src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/video_5_shreyas_iyer_banner.mp4?v=1611916668" type="video/mp4">
+                    </video>
+                </div>
+                <div class="item">    
+                    <video width="800" class="videos" controls>
+                        <source src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/video_1_kiara_aadvani_banner.mp4?v=1611916672" type="video/mp4">
+                    </video>
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="insidebox">
+                <div class="pbox">
+                    <p style="font-size: 40px;font-weight: bolder;color: whitesmoke;">Hear from our partners about their journey with boAt</p>
+                </div>
+                <div class="pbox2" id ="personsdiv" >
+                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/icon.png?v=1611923337" style="max-width: 50px; margin: auto; display: block;">
+                    <div id="personCarousel" class="carousel slide" data-ride="carousel">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="redhigh5">
+                <p>
+                    <span style="color: #ff0000; font-weight: bold; font-size: 30px;">#HIGH5</span>
+                    <span style="color: #fff;">boAtheads</span>
+                </p>
+            </div>
+        </div>
+        <div style="margin-top: 50px;">
+            <marquee width="" direction="" height="" >
+                <span class="text-stroke">India’s No.1 Earwear Audio Brand.</span>
+                <span class="text-white">India’s No.1 Earwear Audio Brand.</span>
+                <span class="text-stroke">India’s No.1 Earwear Audio Brand.</span>
+                <span class="text-stroke">India’s No.1 Earwear Audio Brand.</span>
+                <span class="text-white">India’s No.1 Earwear Audio Brand.</span>
+                <span class="text-stroke">India’s No.1 Earwear Audio Brand.</span>
+                <span class="text-stroke">India’s No.1 Earwear Audio Brand.</span>
+                <span class="text-stroke">India’s No.1 Earwear Audio Brand.</span>
+                <span class="text-stroke">India’s No.1 Earwear Audio Brand.</span>
+                <span class="text-white">India’s No.1 Earwear Audio Brand.</span>
+                <span class="text-stroke">India’s No.1 Earwear Audio Brand.</span>
+                <span class="text-stroke">India’s No.1 Earwear Audio Brand.</span>
+                <span class="text-white">India’s No.1 Earwear Audio Brand.</span>
+                <span class="text-stroke">India’s No.1 Earwear Audio Brand.</span>
+                <span class="text-stroke">India’s No.1 Earwear Audio Brand.</span>
+                <span class="text-stroke">India’s No.1 Earwear Audio Brand.</span>
+            </marquee>
+        </div>
+        <div>
+            <div class="uses">
+                <span class="sales">
+                    <img class="shipping" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/group_186_3x_4616a7a4-8c24-4065-a237-54e3d574bb94.png?v=1611132367"/>
+                    <p class="p">FREE SHIPPING</p>
+                </span>
+                <span class="sales">
+                    <img class="shipping" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/vector_3x_50a1233e-95d9-4e18-9e8e-757b545e2c06.png?v=1611132367"/>
+                    <p class="p">FREE SHIPPING</p>
+                </span>
+                <span  class="sales">
+                    <img class="shipping" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/vector_2_2x_9d5071e2-154a-4f06-b660-9d0430a18248.png?v=1611132367"/>
+                    <p class="p">FREE SHIPPING</p>
+                </span>
+            </div>
+            
+        </div>
+        <div>
+            <p style="text-align: center; margin-top: 30px; font-size: 20px;">
+                India's fastest growing audio & wearables brand. The most incredible range of wireless earphones, earbuds, headphones, smart watches, and home audio. From workouts to adventures, boAt will get you sailing!
+            </p>
+        </div>
+        <div class="footer">
+            <div class="email">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x.png?v=1600753267">
+                <p>Subscribe to email alerts. We promise not to spam your inbox.</p>
+                <input type="text" placeholder="Email Address*"><div class="subscribe">Subscribe</div>
+            </div>
+
+            <div class="shop_links">
+                <h2>Shop</h2>
+                <ul>
+                    <li>True Wireless Earbuds</li>
+                    <li>Wireless Headphones</li>
+                    <li>Wired Headphones</li>
+                    <li>Wireless Speakers</li>
+                    <li>Home Audio</li>
+                    <li>Mobile Accessories</li>
+                    <li>Smart Watches</li>
+                    <li>Gift Card</li>
+                    <li>Rock In India</li>
+                </ul>
+            </div>
+            <div class="help">
+                <h2>Help</h2>
+                <ul>
+                    <li>Track Your Order</li>
+                    <li>Warranty & Support</li>
+                    <li>Return Policy</li>
+                    <li>Service Centers</li>
+                    <li>Bulk Orders</li>
+                    <li>Become An Affiliate</li>
+                    <li>FAQs</li>
+                    <li>Why Buy Direct</li>
+                </ul>
+            </div>
+            <div class="company">
+                <h2>Company</h2>
+                <ul>
+                    <li>About boAt</li>
+                    <li>News</li>
+                    <li>Read our blog</li>
+                    <li>Social Responsibility</li>
+                    <li>Terms of Service</li>
+                    <li>Privacy Policy</li>
+                    <li>High5boAtheads</li>
+                    <li>Why Buy Direct</li>
+                </ul>
+            </div>
+        </div>
+
+        
+            <div class="social_links">
+                <div>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-facebook-square"></i>
+                    <i class="fa fa-youtube"></i>
+                    <i class="fa fa-instagram"></i>
+                </div>
+            </div>
+
+            <div class="pay_download">
+                <div class="pay_links">
+                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Fotter_payment_icn_2_360x.png?v=1610697927">
+                </div>
+                <div class="download_links">
+                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/google-play.png?v=1608620293">
+                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/app-store.png?v=1608620293">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="high5.js"></script>
+</body>
+</html>
