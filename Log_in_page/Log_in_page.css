@@ -1,0 +1,412 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    background-color: black;
+}
+
+.main{
+    width: 100%;
+    height: 700px;
+    background-color: white;
+}
+/* ----------------------------------- */
+/* --------------loader page ------------*/
+.spinner{
+    width: 80px;
+    height: 50px;
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 25%;
+    animation: spin  1s infinite linear;
+    
+}
+
+.spinner img{
+    width: 100%;
+    height: 100%;
+   
+}
+
+@keyframes spin{
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(360deg);
+    }
+} 
+/* -------------loaded data end overlay------------------- */
+
+
+
+
+
+
+/* -----------------------------started main part--------------------- */
+
+.main{
+    margin: auto;
+    width: 100%;
+    height: 550px;
+    /* border: 1px solid grey; */
+}
+
+.login_authentication{
+    width: 33%;
+    height: 500px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.login_authentication h1{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.social_medias{
+    text-align: center;
+}
+
+.social_medias img{
+    width: 65px;
+    margin: 5px;
+    transition: all 0.5s ease;
+    
+}
+
+
+
+/* ------------------- */
+
+.login_details{
+    width: 83%;
+    height: 300px;
+    /* border: 1px solid grey; */
+    margin: auto;
+    
+}
+
+.login_details label{
+    font-size: 17px;
+    color: grey;
+    font-weight: lighter;
+    margin-left: 40px; 
+}
+
+.login_details input, .login_details button{
+    width: 430px;
+    height: 35px;
+    padding-left: 10px ;
+    border: 1px solid rgba(128, 128, 128, 0.308);
+    display: block;
+    margin: auto; 
+    letter-spacing: 3px;  
+    font-size: 15px;
+}
+
+.login_details .forgot{
+    font-size: 5px;
+    text-decoration: none;
+    margin-left: 68%;
+    color: grey;
+}
+
+.forgot:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.login_details input:focus{
+    outline: 1px solid rgba(0, 0, 0, 0.199);
+}
+
+.login_details button{
+    background: none;
+    width: 450px;
+    border: none;
+    border: 1px solid rgba(128, 128, 128, 0.068);
+    height: 40px;
+    background-color: rgba(255, 0, 0, 0.74);
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    margin-top: 20px;
+    cursor: pointer;
+    
+}
+
+.login_details button:focus{
+    outline: none;
+}
+
+.login_details a{
+    margin-left: 45px;
+    font-size: 18px;
+    color: rgba(255, 0, 0, 0.89);
+    font-weight: lighter;
+    margin-left: 35px;
+    
+}
+
+.login_details a:hover{
+    color: blue;
+}
+
+
+/* --------------------------ended main ----------------------------- */
+
+/* ------------started  footer part---------------------------- */
+
+.marguee marquee{
+    color: white;
+    font-size: 30px;
+    margin-top: 35px;
+    
+}
+
+marquee span:nth-child(odd){
+    font-family: 'Londrina Outline', cursive;
+    stroke: white;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+marquee span:nth-child(even){
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+
+/* --------------------------------------------- */
+
+.delivery_exclusive_and_other{
+    background-color: #181717;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.delivery_exclusive_and_other .freeshipping, 
+.delivery_exclusive_and_other .Exclusive_Offers,
+.delivery_exclusive_and_other .Secure_Checkout{
+    /* border: 1px solid orange; */
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    /* padding-top: 10px; */
+    
+}
+
+.freeshipping img{
+    
+    width: 50px;
+    height: 30px;
+    margin-top: 4px;
+}
+
+.freeshipping h2, .Exclusive_Offers h2, .Secure_Checkout h2 {
+    margin-top: 10px;
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
+.Exclusive_Offers img, .Secure_Checkout img{
+    margin-top: 7px;
+    width: 30px;
+    height: 30px;
+}
+
+/* ----------delivery_exclusive_and_other ended-------------------- */
+
+.boat_data{
+    width: 100%;
+    height: 65px;
+    background-color: #2b2a2a;
+    /* margin-top: 20px; */
+    color: white;
+    text-align: center;
+}
+
+.boat_data p{
+    padding-top: 15px ;
+    color: #8f8f8f;
+    font-size: 15px;
+
+}
+
+.help{
+    text-align: right;
+    margin-right: 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.help img{
+    width: 60px;
+    border-radius: 50%;
+    
+
+}
+
+.helped{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer page start------------------------------- */
+
+.footer {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    margin-top: 50px;
+    font-size: 14px;
+    color: #868686;
+    font-weight: 500;
+}
+
+.email {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.shop_links, .helping, .company {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.email img{
+    width: 100px;
+}
+
+.email p {
+    margin-top: 30px;
+}
+
+.email input {
+    padding: 15px;
+    width: 200px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 10px;
+    outline: none;
+    color: white;
+}
+
+.subscribe {
+    padding: 12px;
+    width: 120px;
+    background-color: black;
+    color: white;
+    border: 1px solid red;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.subscribe:hover {
+    background-color: red;
+    outline: none;
+}
+
+.footer h2 {
+    color: white;
+    
+
+}
+
+.footer ul {
+    list-style: none;
+    line-height: 28px;
+}
+
+.footer li {
+    cursor: pointer;
+}
+.footer li:hover {
+    color: red;
+}
+
+/* Social links */
+.social_links {
+    width: 100%;
+    height: 80px;
+    color: rgb(228, 228, 228);
+    
+}
+.social_links i {
+    font-size: 28px;
+    margin-right: 15px;
+    cursor: pointer;
+    
+}
+
+.social_links i:hover {
+    color: white;
+}
+
+.social_links div {
+    margin-left: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pay_download {
+    width: 100%;
+    margin-top: -80px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.pay_links {
+    margin-left: 35px;
+}
+
+.download_links {
+    color: white;
+    margin-left: 470px;
+}
+
+.download_links img {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+

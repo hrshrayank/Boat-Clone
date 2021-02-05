@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+        <link rel="stylesheet" href="/nav.css">
+        <link rel="icon" href="//cdn.shopify.com/s/files/1/0057/8938/4802/files/32x32.png?v=1587196217" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>ROCKERZ</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        .container {
+            background-color: rgb(14, 12, 12);
+            /* text-align: center; */
+            width: 100%;
+        }    
+   
+        .mainbox {
+            width: 90%;
+            background-color: white;
+            margin: auto;
+        }
+        .box1 {
+            margin: 10px auto ;
+            width: 88%;
+            position: relative;
+            top: 30px;
+            height: 60px;
+            border: red solid 1px;
+            border-radius: 50px;
+            display: flex;
+            /* font-size: 32px;
+            font-weight: bold; */
+        }
+        .sort {
+            position: relative;
+            top: 22px;
+            left: -60;
+        }
+        .sortspan span {
+            position: relative;
+            left:100px;
+        }
+         .showproduct {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .boxes {
+            width: 300px;
+            border: solid rgb(218, 215, 215) 1px;
+            margin: 10px;
+            margin-bottom: 50px;
+            text-align: center;
+            cursor: pointer;
+            
+        }
+        .boxes:hover {
+            box-shadow: 5px 5px 5px 5px #888888;
+
+        }
+        .img {
+            width: 250px;
+            height: 250px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .productinfo{
+            margin-bottom: 30px;
+        }
+        .productinfo span{
+            margin: 0px 5px;
+            line-height: 25px;
+        }
+        .productinfo p{
+            font-weight: bold;
+            font-size: large;
+        }
+        .productinfo .fa{
+            margin: 0px;
+            color: #ed1c24;
+        }
+        .filters{
+            float: right;
+            width: 50%;
+            text-align: right;
+        }
+        .featured{  
+            text-align: center;
+            background-color: #ed1c24;
+            margin: 5px;
+        }
+        .featuredpopdiv{
+            width: 150px;
+            height: 200px;
+            display: none;
+        }
+        .featured span{
+           margin: 0px 10px;
+           color: white;
+        }
+        .p h4 {
+            text-align: center;
+            font-size: 30px;
+        }
+        .p2 {
+            width: 85%;
+            margin: auto;
+            text-align: left;
+            font-size: 15px;
+            color: rgb(109, 106, 106);
+        }
+        .marquee {
+            margin-top: 30px;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .text-hollow {
+            -webkit-text-stroke: 1px white;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: white;
+        }
+
+        .text-white {
+            color: white;
+        }
+        .shipping {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            height: 150px;
+        }
+
+        .shipping_features {
+            height: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            color: white;
+            align-items: center;
+            background-color: #1C1C1C;
+            font-weight: bold;
+        }
+
+        .shipping_features div {
+            margin-right: 120px;
+            width: fit-content;
+        }
+
+        .shipping_features img {
+            height: 30px;
+            margin-right: -25px;
+        }
+
+        .shipping_features span {
+            text-align: center;
+        }
+
+        .shipping_details {
+            height: 50%;
+            text-align: center;
+            font-size: 12px;
+            color: #8f8f8f;
+            font-weight: bold;
+            background-color: #2C2C2C;
+        }
+
+        .shipping_details p {
+            padding-top: 10px;
+        }
+
+        .footer {
+            width: 100%;
+            background-color: black;
+            display: flex;
+            height: 400px;
+            margin-top: 50px;
+            font-size: 14px;
+            color: #868686;
+            font-weight: 500;
+        }
+
+        .email {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            margin-left: 40px;
+        }
+
+        .shop_links, .help, .company {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .email img{
+            width: 100px;
+        }
+
+        .email p {
+            margin-top: 30px;
+        }
+
+        .email input {
+            padding: 15px;
+            width: 200px;
+            background-color: black;
+            border: 1px solid white;
+            border-radius: 10px;
+            margin-top: 10px;
+            outline: none;
+            color: white;
+        }
+
+        .subscribe {
+            padding: 12px;
+            width: 120px;
+            background-color: black;
+            color: white;
+            border: 1px solid red;
+            margin-top: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .subscribe:hover {
+            background-color: red;
+            outline: none;
+        }
+
+        .footer h2 {
+            color: white;
+            padding-left: 40px;
+        }
+
+        .footer ul {
+            list-style: none;
+            line-height: 28px;
+        }
+
+        .footer li {
+            cursor: pointer;
+        }
+        .footer li:hover {
+            color: red;
+        }
+
+        /* Social links */
+        .social_links {
+            width: 100%;
+            height: 80px;
+            color: rgb(228, 228, 228);
+        }
+        .social_links i {
+            font-size: 28px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .social_links i:hover {
+            color: white;
+        }
+
+        .social_links div {
+            margin-left: 40px;
+        }
+
+        .pay_download {
+            width: 100%;
+            margin-top: 20px;
+            height: 100px;
+            display: flex;
+        }
+
+        .pay_links {
+            margin-left: 35px;
+        }
+
+        .download_links {
+            color: white;
+            margin-left: 470px;
+        }
+
+        .download_links img {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .price2 {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        
+        <div class="logo"><a href="/LandingPage/landing.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x.png?v=1600753267"></a></div>
+
+        <div class="navbar_categories">
+            <span class="shop">Shop &#9662</span>
+            <div class="display_shop_categories">
+                <a href="/Shops/AirDops/airdopes.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/category_01_360x.png?v=1602142415"></a>
+                <a href="/Shops/Rockers/rock.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/category_02_360x.png?v=1602142415"></a>
+                <a href="/Shops/Basshead_wired/basshead.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/category_03_360x.png?v=1602142415"></a>
+                <a href="/Shops/StoneSpeaker/stonespeaker.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/category_04_360x.png?v=1602142415"></a>
+                <a href="/Shops/HomeAudio/homeaudio.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/category_05_360x.png?v=1602142415"></a>
+                <a href="/Shops/Mobile/mobile.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/category_06_360x.png?v=1602142415"></a>
+                <a href="/Shops/Smartwatch/smartwatch.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/New-Category-Banners_07_360x.png?v=1611569935"></a>
+                <a href="/Shops/LimitedEdition/limited.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/category_08_360x.png?v=1602142415"></a>
+            </div>
+            <div class="line"></div>
+            <a href="/High/high5.html">High5boAtheads</a>
+            <div class="line"></div>
+            <a href="/RockInIndia/Rock_in_India.html">Rock In India</a>
+            <div class="line"></div>
+            <a href="#" class="more">More &#9662</a>
+            <div class="more_options">
+                <a href="/More/MeetTheBoat/MeetTheBoatHeads.html">Meet the boAtheads</a>
+                <a href="/More/Sunburn/sunburn.html">boAt x Sunburn</a>
+                <a href="/More/LFW/lfw.html">boAt x LFW</a>
+                <a href="/More/IPL/ipl.html">boAt x IPL</a>
+            </div>
+        </div>
+
+        <div class="navbar_search">
+            <div>
+                <input type="text" name="search" id="search">
+                <button class="navbar_search_btn" id="navbar_search_btn"><span><i class="fa fa-search"></i></span></button>
+                <div class="navbar_options">
+                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/gift.png?v=1606314809"></a>
+                    <a href="/Log_in_page/Login_page.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/user_1.png?v=1606314823"></a>
+                    <a href="/Shops/Basshead_wired/my_cart.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/cart.png?v=1606314839"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+    <div class="container">
+        
+        <div class="mainbox"> 
+            
+        <div class="box1">
+            <h1 style="font-size: 32px; font-weight: bold; margin: 15px;">Wireless Headphones</h1>
+           <div class="filters">
+               <span>
+                   <label class="sort">Sort By</label>
+               </span>
+               <span id="Featurdpopup" class="sort">
+                   <select id="prod_sort" onchange="sortproducts()">
+                       <option disabled>slect featured</option>
+                       <option value="asc">Price,low to high</option>
+                       <option value="desc">Price,high to low</option>
+                       <option>Featured</option>
+                   </select>
+                </span>
+           </div>
+        </div>
+        <div class="showproduct" id="productlist">
+
+        </div>
+        <!-- <div class="featuredpopdiv" id="featuredpopdiv">
+            <div class="featured">
+               <span> Price,low to high</span>
+            </div>
+            <div class="featured">
+                <span>Price,high to low</span>
+            </div>
+            <div class="featured">
+            <span> Featured</span>
+            </div>
+        </div> -->
+        <div class="p">
+            <h4>Rockerz – Enjoy the Vibe With the Best Wireless Headphones</h4>
+            <div class="p2" >
+                <p>Effortless. Simple. Powerful. With boAt Rockerz Wireless series, get high-fidelity audio paired with premium design to experience sound like no other. From deep, rich bass to clean highs, you’ll hear every note with a new sense of clarity. </p>
+                <p>Equipped with massive battery backup, these wireless earphones last for hours while delivering boAt’s signature sound and bass. With ASAP™ Fast Charge technology these in-ear Headphones are the best one can afford. Experience instant seamless connection with the latest Bluetooth v5.0.</p>
+                <p>Our advanced chipsets offer a real-time experience with low latency and extended battery usage. Passive noise-cancelling headphones take immersion to the next level with crisp and clear audio. Activate smart voice assistant on Rockerz earphones with just one touch.</p>
+                <p>Sleek and sturdy wireless bluetooth earphones that are designed with premium materials and a compact design that is further protected by an IPX rating.</p>
+                <p>Our headphones feature soft ear cups to lightweight premium neckband fit that reduce pressure and offer unrivalled comfort. Whether you are out for an excursion or just enjoying me-time; pushing oneself at the gym or at work from home, the Rockerz series are the perfect companion.</p>
+            </div>
+        </div>
+        
+    
+    </div>
+    <marquee scrollamount="10">
+        <span class="text-hollow">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-hollow">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-white">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-hollow">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-hollow">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-white">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-hollow">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-hollow">India’s No.1 Earwear Audio Brand.</span>
+        
+        <span class="text-hollow">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-white">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-hollow">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-hollow">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-white">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-hollow">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-hollow">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-hollow">India’s No.1 Earwear Audio Brand.</span>
+        
+        <span class="text-hollow">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-white">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-hollow">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-hollow">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-white">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-hollow">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-hollow">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-hollow">India’s No.1 Earwear Audio Brand.</span>
+        
+        <span class="text-hollow">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-white">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-hollow">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-hollow">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-white">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-hollow">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-hollow">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-hollow">India’s No.1 Earwear Audio Brand..</span>
+        
+        <span class="text-hollow">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-white">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-hollow">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-hollow">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-white">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-hollow">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-hollow">India’s No.1 Earwear Audio Brand.</span>
+        <span class="text-hollow">India’s No.1 Earwear Audio Brand.</span>
+    </marquee>
+    <div class="shipping">
+        <div class="shipping_features">
+            <div><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/group_186_3x_4616a7a4-8c24-4065-a237-54e3d574bb94.png?v=1611132367"> </div><div style="margin-left: -60px;">Free Shipping</div>
+            <div><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/vector_3x_50a1233e-95d9-4e18-9e8e-757b545e2c06.png?v=1611132367"> </div> <div style="margin-left: -60px;">Exclusive Deals</div>
+            <div><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/vector_2_2x_9d5071e2-154a-4f06-b660-9d0430a18248.png?v=1611132367"> </div><div style="margin-left: -60px;">Secure Checkout</div>
+        </div>
+        <div class="shipping_details">
+            <p>India's fastest growing audio & wearables brand. The most incredible range of wireless earphones, earbuds, headphones, smart watches, and home<br> audio. From workouts to adventures, boAt will get you sailing!</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="email">
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x.png?v=1600753267">
+            <p>Subscribe to email alerts. We promise not to spam your inbox.</p>
+            <input type="text" placeholder="Email Address*"><div class="subscribe">Subscribe</div>
+        </div>
+
+        <div class="shop_links">
+            <h2>Shop</h2>
+            <ul>
+                <li>True Wireless Earbuds</li>
+                <li>Wireless Headphones</li>
+                <li>Wired Headphones</li>
+                <li>Wireless Speakers</li>
+                <li>Home Audio</li>
+                <li>Mobile Accessories</li>
+                <li>Smart Watches</li>
+                <li>Gift Card</li>
+                <li>Rock In India</li>
+            </ul>
+        </div>
+        <div class="help">
+            <h2>Help</h2>
+            <ul>
+                <li>Track Your Order</li>
+                <li>Warranty & Support</li>
+                <li>Return Policy</li>
+                <li>Service Centers</li>
+                <li>Bulk Orders</li>
+                <li>Become An Affiliate</li>
+                <li>FAQs</li>
+                <li>Why Buy Direct</li>
+            </ul>
+        </div>
+        <div class="company">
+            <h2>Company</h2>
+            <ul>
+                <li>About boAt</li>
+                <li>News</li>
+                <li>Read our blog</li>
+                <li>Social Responsibility</li>
+                <li>Terms of Service</li>
+                <li>Privacy Policy</li>
+                <li>High5boAtheads</li>
+                <li>Why Buy Direct</li>
+            </ul>
+        </div>
+    </div>
+
+    
+        <div class="social_links">
+            <div>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-facebook-square"></i>
+                <i class="fa fa-youtube"></i>
+                <i class="fa fa-instagram"></i>
+            </div>
+        </div>
+
+        <div class="pay_download">
+            <div class="pay_links">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Fotter_payment_icn_2_360x.png?v=1610697927">
+            </div>
+            <div class="download_links">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/google-play.png?v=1608620293">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/app-store.png?v=1608620293">
+            </div>
+        </div>
+</div>
+    <script src="rock.js"></script>
+</body>
+</html>

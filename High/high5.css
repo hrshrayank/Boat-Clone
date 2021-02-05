@@ -1,0 +1,126 @@
+body {
+    background-color: rgb(14, 12, 12);
+    padding: 0;
+    margin: 0;
+    font-size: 150%;
+    
+}
+
+
+.container {
+    background-color: rgb(14, 12, 12);
+    text-align: center;
+    width: 90%;
+    margin: 1% 5%;
+}
+
+.display_shop_categories a {
+    text-decoration: none !important;
+    color: black;
+}
+.img1 {
+    max-width: 100%;
+     height: auto;
+}
+.angle {
+    font-size:60px;
+    cursor: pointer;
+}
+.angle-hover {
+    background-color: whitesmoke
+}
+.videos {
+    margin: 50px;
+}
+.box3 {
+    background: url(https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Here-from-our-partners.jpg?v=1611911029);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px 30px;
+    align-items: center;
+    line-height: normal;
+    }
+ .pbox {
+    text-align: left;
+    width: 35%;
+    /* border: solid white; */
+    margin-left: 40px;
+    margin-top: 150px;
+}
+.insidebox{
+    display: flex;
+}
+.redhigh5 {
+  text-align: left;
+  margin-top: 70px;
+  margin-left: 40px;
+
+}
+.pbox2{
+    width: 30%;
+    margin-left: 200px;
+}
+.pbox2 p{
+    color: whitesmoke;
+}
+.right{
+   right:-80px !important;
+}
+.left{
+   left:-80px !important;
+}
+.persontext {
+   text-align: left;
+}
+
+/* Top Image Slider starts*/
+#top_img_slider a {
+    font-size: 48px;
+    position: absolute;
+    color: #d4d4d4;
+    cursor: pointer;
+}
+#top_img_slider{
+    /* border: 1px solid white; */
+   
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#top_slide_left:hover, #top_slide_right:hover {
+    color: white;
+}
+
+#top_slide_left {
+    left: 0;
+    margin-left: 10%;
+    margin-top: -320px;
+}
+
+#top_slide_right {
+    right: 0;
+    margin-top: -320px;
+    /* margin-left: -20%; */
+    margin-right: 10%;
+    
+}
+
+.navbar_categories a {
+    color: white;
+    /* font-size: 35px; */
+    padding-left: 0.001%;
+    font-size: 110%;
+    /* white-space: 100px; */
+    /* line-height: 20px; */
+    font-weight: 400;
+    font-family: sans-serif;
+}
+.navbar_categories a:hover,
+.navbar_categories a:focus {
+    
+
+    color: white;
+    text-decoration: none;
+}
