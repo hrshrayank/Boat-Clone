@@ -1,5 +1,6 @@
 window.addEventListener("load", loadData)
 var total = 0
+let arr = [{}]
 
 function loadData() {
 
@@ -28,7 +29,7 @@ function loadData() {
                             <div class="prod_color" style="background-color:${item.color}"></div>
                         </div>
                         <div>
-                            <p class="prod_price" id="prod_price">Rs. <span id="item_price">${item.price}</span></p>
+                            <p class="prod_price" id="prod_price">Rs. <span id="item_price${index}">${item.price}</span></p>
                         </div>
                         <div class="change_quantity">
                             <div class="decrease" onclick="decreaseValue(${index})" id="decrease">-</div>
@@ -41,8 +42,6 @@ function loadData() {
     })
 
     display.innerHTML = output
-    
-
 }
 
 function removeItem(index) {
@@ -54,10 +53,11 @@ function removeItem(index) {
 
 }
 
-function increaseValue(index) {
 
+
+function increaseValue(index) {
     let final = document.getElementById(`final_cost${index}`)
-    let item_price = document.getElementById("item_price")
+    let item_price = document.getElementById(`item_price${index}`)
     let item = item_price.textContent
     final.innerHTML = ""
 
@@ -67,12 +67,14 @@ function increaseValue(index) {
     document.getElementById(index).value = value
     final.innerHTML = Number(value) * Number(item)
     
-    
+
+    arr.push(Number(final.innerHTML))
+    display_bill(arr)
   }
   
   function decreaseValue(index) {
   
-    let item_price = document.getElementById("item_price")
+    let item_price = document.getElementById(`item_price${index}`)
     let item = item_price.textContent
     let final = document.getElementById(`final_cost${index}`)
     final.innerHTML = ""
@@ -86,4 +88,21 @@ function increaseValue(index) {
     document.getElementById(index).value = value
     final.innerHTML = Number(value) * Number(item)
     
+    arr.push(Number(final.innerHTML))
+    display_bill(arr)
   }
+  
+
+function display_bill(arr) {
+    // for(let i=0 ; i<arr.length ; i++) {
+        console.log(arr)
+        let total = 0
+        let total_bill = document.createElement("div")
+        let display = document.getElementById("display")
+        for(let i=0 ; i<arr.length ; i++) {
+            total = total + arr[i]
+        }
+        console.log(total)
+    // }
+}
+
