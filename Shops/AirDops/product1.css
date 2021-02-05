@@ -1,0 +1,21 @@
+.product_first {
+    display: flex;
+    border: 1px solid red;
+    height: 700px;
+    margin: 1% 10%;
+}
+.product_details {
+    border: 1px solid red;
+    width: 60%;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    font-size: 110%;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+.middle_second_flex {
+    display: flex;
+    font-size: 110%;
+}

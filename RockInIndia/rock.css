@@ -1,0 +1,277 @@
+*{
+    font-family: Montserrat, sans-serif;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(8, 8, 8);
+}
+.container {
+    background-color: rgb(8, 8, 8);
+    /* margin: 75px; */
+    width: 90%;
+    margin: 1% 5%;
+}
+
+.box1 {
+    height: auto;
+    width: 95%;
+    
+    margin-left: 30px;
+}
+.box2 {
+    width: 100%;
+    height: 600px;
+    background-image: url(https://cdn.shopify.com/s/files/1/0057/8938/4802/files/img_152d.png?v=1611811024) ;
+    background-size: 100% 100%;
+}
+.smallbox1 {
+    width: 25%; 
+    min-height: 150px;
+    float: right;
+    margin-top: 145px;
+    text-align: left;
+    right: 100px;
+    position: absolute;
+}
+.basshead {
+    color: whitesmoke;
+    font-size: 40px;
+}
+.anchor {
+    display: block;
+    width: 200px;
+    padding: 10px 12px;
+    text-align: center;
+    background: #ff0000;
+    color: #fff;
+    border-radius: 2em;
+    /* margin: 30px 0 30px auto; */
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.box3 {
+    width: 100%;
+    height: 500px;
+    background: url(https://cdn.shopify.com/s/files/1/0057/8938/4802/files/backgroun_b100.jpg?v=1611811023);
+    background-size: cover;
+    display: flex;
+    
+}
+.smallbox2 {
+   
+    text-align: right;
+    margin-left: 250px;
+    position: relative;
+    top:200px
+    
+}
+.box2img{
+    width: 700px;
+    text-align: center;
+    position: relative;
+    top:100px
+}
+.box4 {
+    width: 100%;
+    height: 700px;
+    background: url(https://cdn.shopify.com/s/files/1/0057/8938/4802/files/rockerz_n_airdps_bg.jpg?v=1611811023);
+    background-size: cover;
+    display: flex;
+}
+.boatimg {
+    width: 50%;
+    height: 600px;
+}
+.smallbox3 {
+    width: 25%;
+    position: relative;
+    top:200px;
+    left: 50px;
+}
+
+.box5 {
+    width: 100%;
+    height: 750px;
+    background: url(https://cdn.shopify.com/s/files/1/0057/8938/4802/files/rockerz_n_airdps_bg.jpg?v=1611811023);
+    background-size: cover;
+    display: flex;
+}
+.box6 {
+    background-image: url(https://cdn.shopify.com/s/files/1/0057/8938/4802/files/stone190.jpg?v=1611811023);
+    background-size: 100% 100%;
+    height: 500px;
+    width: 100%;
+  
+}
+.smallbox6{
+    float: right;
+    width: 30%;
+    position: relative;
+    top:200px;
+    right: 70px;
+}.box7 {
+    width: 100%;
+    height: 800px;
+    background: url(https://cdn.shopify.com/s/files/1/0057/8938/4802/files/last-background.jpg?v=1611811025);
+    background-size: cover;
+    display: flex;
+}
+.marguee marquee{
+    color: white;
+    font-size: 30px;
+    
+}
+marquee span:nth-child(odd){
+    font-family: "castellar";
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+marquee span:nth-child(even){
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+.uses {
+   display: flex;
+   position: relative;
+   left: 150px;
+   margin-top: 30px;
+}
+.sales {
+   display: flex;
+   margin-left: 150px;
+}
+.shipping{
+   width: 50px;
+   height: 30px;
+}
+.p {
+text-align: left;
+color: #ffffff;
+font-weight: bold;
+position: relative;
+left: 19px;
+top: 7px;
+}
+.footer {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    height: 400px;
+    margin-top: 50px;
+    font-size: 14px;
+    color: #868686;
+    font-weight: 500;
+}
+
+.email {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.shop_links, .help, .company {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.email img{
+    width: 100px;
+}
+
+.email p {
+    margin-top: 30px;
+}
+
+.email input {
+    padding: 15px;
+    width: 200px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 10px;
+    outline: none;
+    color: white;
+}
+
+.subscribe {
+    padding: 12px;
+    width: 120px;
+    background-color: black;
+    color: white;
+    border: 1px solid red;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.subscribe:hover {
+    background-color: red;
+    outline: none;
+}
+
+.footer h2 {
+    color: white;
+    padding-left: 40px;
+}
+
+.footer ul {
+    list-style: none;
+    line-height: 28px;
+}
+
+.footer li {
+    cursor: pointer;
+}
+.footer li:hover {
+    color: red;
+}
+
+/* Social links */
+.social_links {
+    width: 100%;
+    height: 80px;
+    color: rgb(228, 228, 228);
+}
+.social_links i {
+    font-size: 28px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.social_links i:hover {
+    color: white;
+}
+
+.social_links div {
+    margin-left: 40px;
+}
+
+.pay_download {
+    width: 100%;
+    margin-top: 20px;
+    height: 100px;
+    display: flex;
+}
+
+.pay_links {
+    margin-left: 35px;
+}
+
+.download_links {
+    color: white;
+    margin-left: 470px;
+}
+
+.download_links img {
+    margin-right: 10px;
+    cursor: pointer;
+}

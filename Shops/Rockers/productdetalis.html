@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Product Details</title>
+    <style>
+         body {
+            font-family: Montserrat, sans-serif;
+            background-color: black;
+        }
+        .conatiner {
+            width: 100%;
+            margin: 5 px auto;
+            background-color: white;
+        }
+        .box1 {
+            width: 98%;
+            margin: 10px auto;
+            /* border: solid black; */
+            display: flex;
+        }
+        .leftbox1 {
+            width: 50%;
+            margin: 20px;
+            display: inline-block;
+            /* border: solid black; */
+        }
+        .leftbox1 img {
+            width: 450px;
+            height: 450px;
+            margin: auto;
+        }
+
+        .rightbox {
+            margin-top: 50px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .rightbox1 p {
+            margin: 0px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .rightbox1 span {
+            margin: 0px 5px;
+            line-height: 25px;
+        }
+        .rightboxbottom{
+            border-top: 1px solid lightgray;
+            line-height: 35px;
+        }
+        .qtycls{
+            border: 1px solid gray;          
+            width: 30px;
+            height: 30px;
+        }
+        .buybtns{
+            width: 100%;
+            cursor: pointer;
+            border-radius: 50px;
+            border:1px solid gray;
+            text-align: center;
+            margin: 10px 0px;
+        }
+        .addcart:hover{
+            background-color: black;
+            color: white;
+        }
+        .price11 {
+            font-size: 20px;
+            font-weight: bold;
+            color: red;
+        }
+        .price22 {
+            text-decoration: line-through;
+        }
+        .box2 h2 {
+            color: white;
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .pp {
+            width: 85%;
+            margin: auto;
+            color: white;
+            text-align: center;
+            font-size: 15px;
+            line-height: 25px;
+        }
+    </style>
+        
+</head>
+<body>
+    <div class="loading" id="1" style="text-align: center;">
+        <div class="spinner">
+        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/t/11/assets/286.gif?11553">
+          </div>
+        </div>
+    <div class="conatiner" id="2" style="display: none;">
+       <div id="productshow">
+            <div id="leftbox1" class="leftbox1">
+
+            </div>
+            <div  class="rightbox">
+                <div id="productdetails" class="rightbox1">
+
+                </div>
+                <div class="rightboxbottom">
+                    <label>Quantity</label>
+                    <div>
+                        <button class="qtycls" id="decqty" onclick="changeqty(-1)">-</button>
+                        <input class="qtycls" style="text-align: center;padding: 0px;" id="qty" disabled value="1"></input>
+                        <button class="qtycls" id="incqty"  onclick="changeqty(1)">+</button>
+                    </div>
+                    <div class="buybtns addcart" id="addcart">
+                        <span>Add to cart</span>
+                    </div>
+                    <div class="buybtns"  style="color: white; background-color: #ff0000;" >
+                        <span>Buy it now</span>
+                    </div>
+                </div>
+            </div>
+       </div> 
+       
+    </div>
+    <div class="box2">
+        <h2>boAt Rockerz 235 V2</h2>
+        <div class="pp">
+            <p>Say goodbye to noise from the outside world and plug into your musical serenity with the best wireless headphones boAt Rockerz 235V2. The latest Bluetooth v5.0 in boAt Rockerz 235V2 offers a seamless wireless experience while you listen to your sounds. Now you don’t have to wait for long while the Bluetooth headphones get charged as it also comes with Fast Charging technology. The IPX5 sweat and water resistance offers a shield to your headset, whether you sweat it out at the gym or get indulged in adrenaline-pumping action. It also offers call vibration alert feature to the users. With in-built mic, it supports seamless hands-free communication. With a playtime of up to 8 hours, remain plugged in to the rhythms of fun, life and energy on your boAt Rockerz 235V2.</p>
+        </div>
+        <div>
+
+        </div>
+    </div>
+    <script src="productdetails.js"></script>
+</body>
+</html>
