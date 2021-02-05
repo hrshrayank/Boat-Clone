@@ -1,0 +1,204 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "boAt Rockerz 235 V2",
+            "img_1": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/255-pro-red-1_180x.png?v=1611038278%20180w",
+            "img_2": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Red_220x.jpg?v=1611038278 220w",
+            "rating": 4.6,
+            "review": "10 reviews",
+            "discount_price": "Rs 1,199.00",
+            "actual_price": "Rs  2,990.00",
+            "features": ["✓ Nonstop music for up to 8 hours",
+                            "✓ IPX5 rated for sweat and water resistance",
+                        " ✓ Get 4 hours of charge in just 20 minutes"]
+        },
+        {
+            "id": 2,
+            "name": "boAt Rockerz 255",
+            "img_1": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-255-red_220x.png?v=1611038261%20220w",
+            "img_2": "http://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-255-red_300x.png?v=1611038261%20300w",
+            "rating": 5,
+            "review": "20 reviews",
+            "discount_price": "Rs 1,499",
+            "actual_price": "Rs  2,990",
+            "features": ["✓ Enjoy a playtime of 15H on a single charge","✓ IPX4 rating makes it perfect for outdoors","✓ Experience integrated smart controls"]
+        },
+        {
+            "id": 3,
+            "name": "boAt Rockerz 255 Pro",
+            "img_1": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/255-pro-red-1_220x.png?v=1611038278 220w",
+            "img_2":"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/255-pro-red-1_300x.png?v=1611038278 300w",
+            "rating": 5,
+            "review": "225 reviews",
+            "discount_price": "Rs 1,599.00",
+            "actual_price": "Rs  3,499.00",
+            "features":["✓ Fast charge in an hour or less","✓ Perfect for sports with IPX5 rating","✓ Block unwanted sounds with CVC noise cancellation"]
+        },
+        {
+            "id": 5,
+            "name": "boAt Rockerz 450",
+            "img_1": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1_220x.png?v=1611038265 220w",
+            "img": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1_300x.png?v=1611038265 300w",
+            "rating": 5,
+            "review": "150 reviews",
+            "discount_price": "Rs 1,499.00",
+            "actual_price": "Rs  3,990.00",
+            "features":["✓ Fast charge in an hour or less","✓ Perfect for sports with IPX5 rating","✓ Block unwanted sounds with CVC noise cancellation"]
+        },
+        {
+            "id": 6,
+            "name": "boAt Rockerz 261",
+            "img_1": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-261-red_220x.png?v=1611038263 220w",
+            "img_2": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-261-red_300x.png?v=1611038263 300w",
+            "rating": 4.6,
+            "review": "15 reviews",
+            "discount_price": "Rs 1,490.00",
+            "actual_price": "Rs  4,990.00",
+            "features":["✓ Fast charge in an hour or less","✓ Perfect for sports with IPX5 rating","✓ Block unwanted sounds with CVC noise cancellation"]
+        },
+        {
+            "id": 7,
+            "name": "boAt Rockerz 400",
+            "img_1": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-400-blue_220x.jpg?v=1611038264 220w",
+            "img_2": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-400-blue_360x.jpg?v=1611038264 360w",
+            "rating": 5,
+            "review": "42 reviews",
+            "discount_price": "Rs 1,499.00",
+            "actual_price": "Rs  2,990.00",
+            "features":["✓ Fast charge in an hour or less","✓ Perfect for sports with IPX5 rating","✓ Block unwanted sounds with CVC noise cancellation"]
+        },
+        {
+            "id": 8,
+            "name": "boAt 225 Wireless",
+            "img_1": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/225_220x.png?v=1576488657 220w",
+            "img_2": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/225_300x.png?v=1576488657 300w",
+            "rating": 5,
+            "review": "12 reviews",
+            "discount_price": "Rs 1,299.00",
+            "actual_price": "Rs  2,990.00",
+            "features":["✓ Fast charge in an hour or less","✓ Perfect for sports with IPX5 rating","✓ Block unwanted sounds with CVC noise cancellation"]
+        },
+        {
+            "id": 9,
+            "name": "boAt Rockerz 600",
+            "img_1": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1_123c5a87-2511-47cb-a1f0-2fabe7fc2c5c_220x.png?v=1611038262%20220w",
+            "img_2": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1_123c5a87-2511-47cb-a1f0-2fabe7fc2c5c_360x.png?v=1611038262 360w",
+            "rating": 5,
+            "review": "16 reviews",
+            "discount_price": "Rs 1,999.00",
+            "actual_price": "Rs  3,990.00",
+            "features":["✓ Fast charge in an hour or less","✓ Perfect for sports with IPX5 rating","✓ Block unwanted sounds with CVC noise cancellation"]
+        },
+        {
+            "id": 10,
+            "name": "boAt Rockerz 510",
+            "img_1": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1org_220x.png?v=1611038262 220w",
+            "img_2": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1org_300x.png?v=1611038262 300w",
+            "rating": 5,
+            "review": "52 reviews",
+            "discount_price": "Rs 1,899.00",
+            "actual_price": "Rs  3,490.00",
+            "features":["✓ Fast charge in an hour or less","✓ Perfect for sports with IPX5 rating","✓ Block unwanted sounds with CVC noise cancellation"]
+        },
+        {
+            "id": 11,
+            "name": "boAt Rockerz 239",
+            "img_1": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-239-black_220x.png?v=1611038272 220w",
+            "img_2": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-239-black_300x.png?v=1611038272 300w",
+            "rating": 5,
+            "review": "9 reviews",
+            "discount_price": "Rs 1,399.00",
+            "actual_price": "Rs  2,990.00",
+            "features":["✓ Fast charge in an hour or less","✓ Perfect for sports with IPX5 rating","✓ Block unwanted sounds with CVC noise cancellation"]
+        },
+        {
+            "id": 12,
+            "name": "boAt100 WireLess",
+            "img_1": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_220x.jpg?v=1603310127 220w",
+            "img_2": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_300x.jpg?v=1603310127 300ww",
+            "rating": 4.5,
+            "review": "64 reviews",
+            "discount_price": "Rs 1,499.00",
+            "actual_price": "Rs  2,990.00",
+            "features":["✓ Fast charge in an hour or less","✓ Perfect for sports with IPX5 rating","✓ Block unwanted sounds with CVC noise cancellation"]
+        },
+        {
+            "id": 13,
+            "name": "boAt Rockerz 295 v2",
+            "img_1": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Rockerz295v2Lime_220x.jpg?v=1611038289 220w",
+            "img_2": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Rockerz295v2Lime_300x.jpg?v=1611038289 300w",
+            "rating": 4.5,
+            "review": "13 reviews",
+            "discount_price": "Rs 1,999.00",
+            "actual_price": "Rs  4,990.00",
+            "features":["✓ Fast charge in an hour or less","✓ Perfect for sports with IPX5 rating","✓ Block unwanted sounds with CVC noise cancellation"]
+        },
+        {
+            "id": 14,
+            "name": "boAt 103 WireLess",
+            "img_1": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103Black_220x.jpg?v=1603175664 220w",
+            "img_2": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103Black_300x.jpg?v=1603175664 300w",
+            "rating": 4.5,
+            "review": "16 reviews",
+            "discount_price": "Rs 1,199.00",
+            "actual_price": "Rs  1,990.00",
+            "features":["✓ Fast charge in an hour or less","✓ Perfect for sports with IPX5 rating","✓ Block unwanted sounds with CVC noise cancellation"]
+        },
+        {
+            "id": 15,
+            "name": "boAt Rockerz 270 v2",
+            "img_1": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-rockerz-270-v2-black_220x.jpg?v=1611038269 220w",
+            "img_2": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-rockerz-270-v2-black_300x.jpg?v=1611038269 300w",
+            "rating": 5,
+            "review": "7 reviews",
+            "discount_price": "Rs 1,699.00",
+            "actual_price": "Rs  2,990.00",
+            "features":["✓ Fast charge in an hour or less","✓ Perfect for sports with IPX5 rating","✓ Block unwanted sounds with CVC noise cancellation"]
+        },
+        {
+            "id": 16,
+            "name": "boAt Rockerz 275 v2",
+            "img_1": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/275-main_220x.png?v=1611038273 220w",
+            "img_2": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/275-main_300x.png?v=1611038273 300w",
+            "rating": 5,
+            "review": "6 reviews",
+            "discount_price": "Rs 1,899.00",
+            "actual_price": "Rs  2,990.00",
+            "features":["✓ Fast charge in an hour or less","✓ Perfect for sports with IPX5 rating","✓ Block unwanted sounds with CVC noise cancellation"]
+        },
+        {
+            "id": 18,
+            "name": " Rockerz 370",
+            "img_1": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-370-green_220x.png?v=1603175642 220w",
+            "img_2": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/275-main_300x.png?v=1611038273 300w",
+            "rating": 4.5,
+            "review": "26 reviews",
+            "discount_price": "Rs 1,399.00",
+            "actual_price": "Rs  2,490.00",
+            "features":["✓ Fast charge in an hour or less","✓ Perfect for sports with IPX5 rating","✓ Block unwanted sounds with CVC noise cancellation"]
+        },
+        {
+            "id": 19,
+            "name": "boAt Rockerz 275 v2",
+            "img_1": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/275-main_220x.png?v=1611038273 220w",
+            "img_2": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-370-green_300x.png?v=1603175642 300w",
+            "rating": 5,
+            "review": "6 reviews",
+            "discount_price": "Rs 1,899.00",
+            "actual_price": "Rs  2,990.00",
+            "features":["✓ Fast charge in an hour or less","✓ Perfect for sports with IPX5 rating","✓ Block unwanted sounds with CVC noise cancellation"]
+        },
+        {
+            "id": 20,
+            "name": "boAt Rockerz 275 v2",
+            "img_1": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/275-main_220x.png?v=1611038273 220w",
+            "img_2": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/275-main_300x.png?v=1611038273 300w",
+            "rating": 5,
+            "review": "6 reviews",
+            "discount_price": "Rs 1,899.00",
+            "actual_price": "Rs  2,990.00",
+            "features":["✓ Fast charge in an hour or less","✓ Perfect for sports with IPX5 rating","✓ Block unwanted sounds with CVC noise cancellation"]
+        }
+    ]
+}
