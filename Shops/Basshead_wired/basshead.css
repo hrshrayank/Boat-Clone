@@ -189,6 +189,7 @@ nav {
     display: flex;
     margin-right: 100px;
     padding-top: 10px;
+    
 }
 
 select {
@@ -199,6 +200,7 @@ select {
     cursor: pointer;
     color: tomato;
     font-size: 18px;
+    background-color: white;
 }
 
 

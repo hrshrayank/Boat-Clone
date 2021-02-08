@@ -97,6 +97,6 @@ function redirect(e) {
     console.log(id)
     let param = new URLSearchParams()
     param.append('id', id)
-    url = "airdopesproduct.html"
+    // url = "airdopesproduct.html"
     window.location.assign(url + "?" + param.toString())
 }

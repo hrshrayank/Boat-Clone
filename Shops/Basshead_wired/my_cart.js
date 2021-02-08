@@ -28,7 +28,7 @@ function loadData() {
                             <div class="prod_color" style="background-color:${item.color}"></div>
                         </div>
                         <div>
-                            <p class="prod_price" id="prod_price">Rs. <span id="item_price">${item.price}</span></p>
+                            <p class="prod_price" id="prod_price">Rs. <span id="item_price${index}">${item.price}</span></p>
                         </div>
                         <div class="change_quantity">
                             <div class="decrease" onclick="decreaseValue(${index})" id="decrease">-</div>
@@ -41,8 +41,7 @@ function loadData() {
     })
 
     display.innerHTML = output
-    
-
+    displayBill()
 }
 
 function removeItem(index) {
@@ -54,10 +53,11 @@ function removeItem(index) {
 
 }
 
-function increaseValue(index) {
 
+
+function increaseValue(index) {
     let final = document.getElementById(`final_cost${index}`)
-    let item_price = document.getElementById("item_price")
+    let item_price = document.getElementById(`item_price${index}`)
     let item = item_price.textContent
     final.innerHTML = ""
 
@@ -67,12 +67,13 @@ function increaseValue(index) {
     document.getElementById(index).value = value
     final.innerHTML = Number(value) * Number(item)
     
-    
+    displayBill()
+    // arr.push(Number(final.innerHTML))
   }
   
   function decreaseValue(index) {
   
-    let item_price = document.getElementById("item_price")
+    let item_price = document.getElementById(`item_price${index}`)
     let item = item_price.textContent
     let final = document.getElementById(`final_cost${index}`)
     final.innerHTML = ""
@@ -85,5 +86,51 @@ function increaseValue(index) {
     
     document.getElementById(index).value = value
     final.innerHTML = Number(value) * Number(item)
-    
+    displayBill()
+    // arr.push(Number(final.innerHTML))
   }
+  
+function displayBill () {
+    
+    let display = document.getElementById("display")
+    var total = document.createElement("div")
+    total.className = "total_bill"
+    total.id = "total_bill"
+    total.innerHTML = ""
+    display.append(total)
+    total.onclick = calculate()
+    
+}
+
+function calculate() {
+    let display = document.getElementById("display")
+    let tot = document.getElementById("total_bill")
+    tot.innerHTML = ""
+    let sum = 0
+    let store_details = localStorage.getItem("cart_items")
+if(store_details == null) {
+    store_details_obj = []
+} else {
+    store_details_obj = JSON.parse(store_details)
+}
+
+for(let i=0 ; i<store_details_obj.length ; i++) {
+    let price = document.getElementById(`final_cost${i}`)
+    let val = Number(price.innerHTML)
+    sum = sum + val
+}
+console.log(sum)
+tot.innerHTML = "Total: Rs. " + sum
+
+var checkout = document.createElement("div")
+checkout.textContent = "CHECKOUT"
+checkout.className = "checkout"
+checkout.id = "checkout"
+
+display.append(checkout)
+
+let goBack = document.getElementById("checkout")
+goBack.addEventListener("click", function() {
+    location = "basshead.html"
+})
+}
