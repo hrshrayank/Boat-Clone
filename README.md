@@ -7,10 +7,11 @@
 - **CSS**
 - **JavaScript**
 
-### Index Page:
-- Overview of the landing page- free template, pricing- plans and the resources- templates.
-- Get started with one of our free templates.
-Campaign monitor provides lots of functionality for marketing team to save time and generate automated email as per user requirement work. Everything you need for digital and email marketing that's on point.Choose the plan that's right for your brand. Whether you're just getting started with email marketing or you're personalizing every campaign, there's a plan for you. Showcased with the help of screenshot.
+### Clone the project on local Machine:
+- first use git clone https://github.com/hrshrayank/Boat-Clone.git on terminal
+- Now use npm i on the  folder
+- Just click on index.html as live terminal to run on the local machine
+
 ### Landing Page
 <img width="917" alt="Screenshot (635)" src="https://miro.medium.com/max/3802/1*32v3BSIpLEaHBnI73_-pRg.png">
 
