@@ -1,73 +1,73 @@
-const cards = document.getElementById('middle__second');
-const searchBar = document.getElementById('search');
-let data = [];
-    
+const cards = document.getElementById('middle__second')
+const searchBar = document.getElementById('search')
+let data = []
+
 //Search Items
 searchBar.addEventListener('keyup', (e) => {
-    const searchString = e.target.value.toLowerCase();
+  const searchString = e.target.value.toLowerCase()
 
-    const filteredCharacters = data.filter((character) => {
-        return (
-            character.name.toLowerCase().includes(searchString)
-            
-        );
-    });
-    displayCharacters(filteredCharacters);
-});
+  const filteredCharacters = data.filter((character) => {
+    return character.name.toLowerCase().includes(searchString)
+  })
+  displayCharacters(filteredCharacters)
+})
 
 //Sort Items
 
-let sort_btn=document.getElementById("sort_btn")
+let sort_btn = document.getElementById('sort_btn')
 
-sort_btn.addEventListener("click",function(){
-    let select_out=document.getElementById("sort-by").value
-    console.log("Working");
-    if(select_out =="feature"){
-        loadData()
-    }else if(select_out == "low_to_high"){
-        loadDataLowToHigh()
-    }else if(select_out =="high_to_low"){
-        loadDataHighToLow()
-    }
+sort_btn.addEventListener('click', function () {
+  let select_out = document.getElementById('sort-by').value
+  console.log('Working')
+  if (select_out == 'feature') {
+    loadData()
+  } else if (select_out == 'low_to_high') {
+    loadDataLowToHigh()
+  } else if (select_out == 'high_to_low') {
+    loadDataHighToLow()
+  }
 })
 // Low to high
 const loadDataLowToHigh = async () => {
-    try {
-        const res = await fetch('http://localhost:3000/airdopes?_sort=price&_order=asc');
-        data = await res.json();
-        displayCharacters(data);
-    } catch (err) {
-        console.error(err);
-    }
-};
+  try {
+    const res = await fetch(
+      'http://localhost:3000/airdopes?_sort=price&_order=asc'
+    )
+    data = await res.json()
+    displayCharacters(data)
+  } catch (err) {
+    console.error(err)
+  }
+}
 //High to Low
 const loadDataHighToLow = async () => {
-    try {
-        const res = await fetch('http://localhost:3000/airdopes?_sort=price&_order=desc');
-        data = await res.json();
-        displayCharacters(data);
-    } catch (err) {
-        console.error(err);
-    }
-};
-
+  try {
+    const res = await fetch(
+      'http://localhost:3000/airdopes?_sort=price&_order=desc'
+    )
+    data = await res.json()
+    displayCharacters(data)
+  } catch (err) {
+    console.error(err)
+  }
+}
 
 //Normal
 
 const loadData = async () => {
-    try {
-        const res = await fetch('http://localhost:3000/airdopes');
-        data = await res.json();
-        displayCharacters(data);
-    } catch (err) {
-        console.error(err);
-    }
-};
+  try {
+    const res = await fetch('https://boatdatabase.herokuapp.com/airdopes')
+    data = await res.json()
+    displayCharacters(data)
+  } catch (err) {
+    console.error(err)
+  }
+}
 //Display Data
 const displayCharacters = (characters) => {
-    const html = characters
-        .map((character) => {
-            return `
+  const html = characters
+    .map((character) => {
+      return `
             <div class="middle__second_main" id = "${character.id}" onClick = "redirect(this)">
             <img src="${character.url}">
 
@@ -84,19 +84,19 @@ const displayCharacters = (characters) => {
             <p class="middle_second_underline"><s>Rs ${character.before}.00</s></p>
             </div>
         </div>
-        `;
-        })
-        .join('');
-    cards.innerHTML = html;
-};
+        `
+    })
+    .join('')
+  cards.innerHTML = html
+}
 
-loadData();
+loadData()
 
 function redirect(e) {
-    let id = e.id;
-    console.log(id)
-    let param = new URLSearchParams()
-    param.append('id', id)
-    // url = "airdopesproduct.html"
-    window.location.assign(url + "?" + param.toString())
+  let id = e.id
+  console.log(id)
+  let param = new URLSearchParams()
+  param.append('id', id)
+  // url = "airdopesproduct.html"
+  window.location.assign(url + '?' + param.toString())
 }
