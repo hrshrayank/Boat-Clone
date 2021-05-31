@@ -627,7 +627,7 @@ const data = {
       img_url:
         'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-100-white_300x.png?v=1613742684',
       img_url_hover:
-        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-100-black_540x.png?v=1611038259',
+        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-100-black_540x.png?v=1613457238',
       product_name: 'boAt BassHeads 100',
       stars: 4,
       reviews: 197,
@@ -664,7 +664,7 @@ const data = {
       img_url:
         'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-242-black_300x.png?v=1613742692',
       img_url_hover:
-        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_d1187cc8-e513-4a02-993b-9fff1b576200_540x.png?v=1611038266',
+        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-242-yellowgreen_540x.png?v=1613457260',
       product_name: 'boAt BassHeads 242',
       stars: 4,
       reviews: 202,
@@ -719,17 +719,17 @@ const data = {
         {
           id: 1,
           color: 'blue',
-          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_1_1_540x.jpg?v=1611038256',
+          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Untitled-1_2fa80462-def0-4c74-84c2-df9f7b669410_540x.png?v=1618664138',
         },
         {
           id: 2,
           color: 'black',
-          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_1_70848b19-4345-4b74-8b7f-3310eb6c76f7_540x.jpg?v=1611038257',
+          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/black_540x.png?v=1618664182',
         },
         {
           id: 3,
           color: 'red',
-          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_1_2_540x.jpg?v=1611038257',
+          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/red_540x.png?v=1618664194',
         },
       ],
     },
@@ -861,7 +861,7 @@ const data = {
       img_url:
         'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-132_540x.png?v=1613743057',
       img_url_hover:
-        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/3_c14a9ba6-a46e-47e7-98aa-053185051326_300x.jpg?v=1604384731',
+        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-132_540x.png?v=1613743057',
       product_name: 'Nirvana CE-1',
       stars: 3,
       reviews: 4,
@@ -888,7 +888,7 @@ const data = {
       img_url:
         'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-142-cc-1_540x.png?v=1613742977',
       img_url_hover:
-        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-nirvana-duo_300x.jpg?v=1604384732',
+        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-142-cc-1_540x.png?v=1613742977',
       product_name: 'Nirvana DUO',
       stars: 1,
       reviews: 1,
@@ -915,7 +915,7 @@ const data = {
       img_url:
         'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/nirvana-deuce_300x.png?v=1613742922',
       img_url_hover:
-        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-nirvana-deuce_300x.jpg?v=1604384733',
+        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/nirvana-deuce_720x.png?v=1613742922',
       product_name: 'Nirvana Deuce',
       stars: 2,
       reviews: 4,
@@ -942,7 +942,7 @@ const data = {
       img_url:
         'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/nirvana-tres_300x.png?v=1613742931',
       img_url_hover:
-        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-nirvana-tres_300x.jpg?v=1604384733',
+        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/nirvana-tres_720x.png?v=1613742931',
       product_name: 'Nirvana Tres',
       stars: 5,
       reviews: 3,
@@ -969,7 +969,7 @@ const data = {
       img_url:
         'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-172-black-with-hd-sound_7aa5b096-c813-4a5e-a3d7-89dccdcbf287_300x.png?v=1613742779',
       img_url_hover:
-        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-142-gunmetal_300x.jpg?v=1604384735',
+        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-172-black-with-hd-sound_7aa5b096-c813-4a5e-a3d7-89dccdcbf287_540x.png?v=1613742779',
       product_name: 'BassHeads 142',
       stars: 5,
       reviews: 5,
@@ -996,7 +996,7 @@ const data = {
       img_url:
         'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-100-make-in-india-orange_300x.png?v=1612246917',
       img_url_hover:
-        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-100-make-in-india-white_300x.png?v=1612246917',
+        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-100-make-in-india-white_540x.png?v=1612246917',
       product_name: 'BassHeads 100 - Made in India',
       stars: 1,
       reviews: 3,
@@ -1033,7 +1033,7 @@ const data = {
       img_url:
         'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1522.5_300x.png?v=1612246918',
       img_url_hover:
-        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-152-white-7_300x.png?v=1611038256',
+        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1522.5_540x.png?v=1612246918',
       product_name: 'BassHeads 152 - Made in India',
       stars: 5,
       reviews: 1,
@@ -1070,7 +1070,7 @@ const data = {
       img_url:
         'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-110-black_300x.png?v=1613742985',
       img_url_hover:
-        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-110-white_300x.png?v=1598336750',
+        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-110-black_540x.png?v=1613742985',
       product_name: 'BassHeads 110',
       stars: 2,
       reviews: 2,
@@ -1107,7 +1107,7 @@ const data = {
       img_url:
         'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-122-thumb-nail_300x.png?v=1587705080',
       img_url_hover:
-        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-122-black_360x.png?v=1598336682',
+        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-122-thumb-nail_540x.png?v=1587705080',
       product_name: 'BassHeads 122',
       stars: 4,
       reviews: 18,
@@ -1134,7 +1134,7 @@ const data = {
       img_url:
         'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-900-thumb-nail_72a1d4aa-30bc-49d7-9fb6-b28a52406736_300x.png?v=1576488656',
       img_url_hover:
-        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-910-black_360x.png?v=1598336751',
+        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-900-thumb-nail_72a1d4aa-30bc-49d7-9fb6-b28a52406736_540x.png?v=1576488656',
       product_name: 'BassHeads 910',
       stars: 3,
       reviews: 9,
@@ -1161,7 +1161,7 @@ const data = {
       img_url:
         'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1grn_66029af4-f3d3-4a56-89ab-acf9de85d776_300x.png?v=1587450445',
       img_url_hover:
-        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1red_df69b84a-4f77-416f-b335-15446fe49b07_360x.png?v=1587450445',
+        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1grn_66029af4-f3d3-4a56-89ab-acf9de85d776_540x.png?v=1587450445',
       product_name: 'BassHeads 228',
       stars: 5,
       reviews: 1,
@@ -1198,7 +1198,7 @@ const data = {
       img_url:
         'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-132_300x.png?v=1588054991',
       img_url_hover:
-        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-122-black_360x.png?v=1598336682',
+        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-132_540x.png?v=1588054991',
       product_name: 'BassHeads 132',
       stars: 2,
       reviews: 5,
@@ -1225,7 +1225,7 @@ const data = {
       img_url:
         'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1grn_1d50c0b3-5b2f-4ba1-a6eb-c138495485a2_300x.png?v=1611038284',
       img_url_hover:
-        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1grn_1d50c0b3-5b2f-4ba1-a6eb-c138495485a2_300x.png?v=1611038284',
+        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1neon_3105765c-e660-47c7-9deb-3482720df176_540x.png?v=1611038284',
       product_name: 'boAt BassHeads 220',
       stars: 4,
       reviews: 22,
