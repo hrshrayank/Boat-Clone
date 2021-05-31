@@ -625,7 +625,7 @@ const data = {
     {
       id: 2,
       img_url:
-        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1blk_300x.png?v=1613742669',
+        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-100-white_300x.png?v=1613742684',
       img_url_hover:
         'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-100-black_540x.png?v=1611038259',
       product_name: 'boAt BassHeads 100',
@@ -645,24 +645,24 @@ const data = {
         {
           id: 1,
           color: 'black',
-          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-100-black_540x.png?v=1611038259',
+          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-100-black_540x.png?v=1613457238',
         },
         {
           id: 2,
           color: 'red',
-          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-100-red_540x.png?v=1611038259',
+          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-100-red_540x.png?v=1613457238',
         },
         {
           id: 3,
           color: 'white',
-          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-100-white_540x.png?v=1611038259',
+          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-100-white_540x.png?v=1613742684',
         },
       ],
     },
     {
       id: 3,
       img_url:
-        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_d1187cc8-e513-4a02-993b-9fff1b576200_300x.png?v=1611038266',
+        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-242-black_300x.png?v=1613742692',
       img_url_hover:
         'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_d1187cc8-e513-4a02-993b-9fff1b576200_540x.png?v=1611038266',
       product_name: 'boAt BassHeads 242',
@@ -682,17 +682,17 @@ const data = {
         {
           id: 1,
           color: 'limegreen',
-          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/green_540x.png?v=1611038267',
+          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-242-yellowgreen_540x.png?v=1613457260',
         },
         {
           id: 2,
           color: 'red',
-          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/red_540x.png?v=1611038267',
+          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-242-red_540x.png?v=1613457260',
         },
         {
           id: 3,
           color: 'blue',
-          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/blue_540x.png?v=1611038267',
+          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-242-blue_540x.png?v=1613457260',
         },
       ],
     },
@@ -859,7 +859,7 @@ const data = {
     {
       id: 9,
       img_url:
-        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/3_c14a9ba6-a46e-47e7-98aa-053185051326_300x.jpg?v=1604384731',
+        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-132_540x.png?v=1613743057',
       img_url_hover:
         'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/3_c14a9ba6-a46e-47e7-98aa-053185051326_300x.jpg?v=1604384731',
       product_name: 'Nirvana CE-1',
@@ -878,15 +878,15 @@ const data = {
       colors: [
         {
           id: 1,
-          color: 'white',
-          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/3_c14a9ba6-a46e-47e7-98aa-053185051326_720x.jpg?v=1604384731',
+          color: 'black',
+          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-132_540x.png?v=1613743057',
         },
       ],
     },
     {
       id: 10,
       img_url:
-        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-nirvana-duo_300x.jpg?v=1604384732',
+        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-142-cc-1_540x.png?v=1613742977',
       img_url_hover:
         'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-nirvana-duo_300x.jpg?v=1604384732',
       product_name: 'Nirvana DUO',
@@ -906,14 +906,14 @@ const data = {
         {
           id: 1,
           color: 'black',
-          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-nirvana-duo_720x.jpg?v=1604384732',
+          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-142-cc-1_540x.png?v=1613742977',
         },
       ],
     },
     {
       id: 11,
       img_url:
-        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-nirvana-deuce_300x.jpg?v=1604384733',
+        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/nirvana-deuce_300x.png?v=1613742922',
       img_url_hover:
         'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-nirvana-deuce_300x.jpg?v=1604384733',
       product_name: 'Nirvana Deuce',
@@ -933,14 +933,14 @@ const data = {
         {
           id: 1,
           color: 'black',
-          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-nirvana-deuce_720x.jpg?v=1604384733',
+          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/nirvana-deuce_720x.png?v=1613742922',
         },
       ],
     },
     {
       id: 12,
       img_url:
-        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-nirvana-tres_300x.jpg?v=1604384733',
+        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/nirvana-tres_300x.png?v=1613742931',
       img_url_hover:
         'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-nirvana-tres_300x.jpg?v=1604384733',
       product_name: 'Nirvana Tres',
@@ -960,14 +960,14 @@ const data = {
         {
           id: 1,
           color: 'black',
-          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-nirvana-tres_720x.jpg?v=1604384733',
+          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/nirvana-tres_720x.png?v=1613742931',
         },
       ],
     },
     {
       id: 13,
       img_url:
-        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-142-gunmetal_300x.jpg?v=1604384735',
+        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-172-black-with-hd-sound_7aa5b096-c813-4a5e-a3d7-89dccdcbf287_300x.png?v=1613742779',
       img_url_hover:
         'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-142-gunmetal_300x.jpg?v=1604384735',
       product_name: 'BassHeads 142',
@@ -987,7 +987,7 @@ const data = {
         {
           id: 1,
           color: 'black',
-          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-142-gunmetal_540x.jpg?v=1604384735',
+          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-172-black-with-hd-sound_7aa5b096-c813-4a5e-a3d7-89dccdcbf287_540x.png?v=1613742779',
         },
       ],
     },
@@ -1068,7 +1068,7 @@ const data = {
     {
       id: 16,
       img_url:
-        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-110-black_300x.png?v=1598336750',
+        'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-110-black_300x.png?v=1613742985',
       img_url_hover:
         'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-110-white_300x.png?v=1598336750',
       product_name: 'BassHeads 110',
@@ -1088,17 +1088,17 @@ const data = {
         {
           id: 1,
           color: 'black',
-          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-110-black_540x.png?v=1598336750',
+          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-110-black_540x.png?v=1613742985',
         },
         {
           id: 2,
           color: 'white',
-          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-110-black_540x.png?v=1598336750',
+          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-110-white_540x.png?v=1613457275',
         },
         {
           id: 3,
           color: 'red',
-          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-110-black_540x.png?v=1598336750',
+          url: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-110-red_540x.png?v=1613457275',
         },
       ],
     },
