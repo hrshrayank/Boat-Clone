@@ -24,7 +24,7 @@ function display() {
   let loc = window.location.search
   let urlSearchParams = new URLSearchParams(loc)
   let query = urlSearchParams.get('id')
-  let url = `https://boatdatabase.herokuapp.com/basshead_products?id=${query}`
+  let url = `https://boat-databse.herokuapp.com/basshead_products?id=${query}`
   fetch(url)
     .then((res) => res.json())
     .then((res) => displayDetails(res))
@@ -289,7 +289,7 @@ function changeColor1() {
     let loc = window.location.search
     let urlSearchParams = new URLSearchParams(loc)
     let query = urlSearchParams.get('id')
-    let url = `https://boatdatabase.herokuapp.com/basshead_products?id=${query}`
+    let url = `https://boat-databse.herokuapp.com/basshead_products?id=${query}`
     fetch(url)
       .then((res) => res.json())
       .then((res) => displayDetails(res))
@@ -523,7 +523,7 @@ function changeColor2() {
     let loc = window.location.search
     let urlSearchParams = new URLSearchParams(loc)
     let query = urlSearchParams.get('id')
-    let url = `https://boatdatabase.herokuapp.com/basshead_products?id=${query}`
+    let url = `https://boat-databse.herokuapp.com/basshead_products?id=${query}`
     fetch(url)
       .then((res) => res.json())
       .then((res) => displayDetails(res))
@@ -756,7 +756,7 @@ function changeColor3() {
     let loc = window.location.search
     let urlSearchParams = new URLSearchParams(loc)
     let query = urlSearchParams.get('id')
-    let url = `https://boatdatabase.herokuapp.com/basshead_products?id=${query}`
+    let url = `https://boat-databse.herokuapp.com/basshead_products?id=${query}`
     fetch(url)
       .then((res) => res.json())
       .then((res) => displayDetails(res))

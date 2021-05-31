@@ -32,7 +32,7 @@ const loadDataLowToHigh = async () => {
   // console.log(pric);
   try {
     const res = await fetch(
-      'https://boatdatabase.herokuapp.com/smartwatch?_sort=price&_order=asc'
+      'https://boat-databse.herokuapp.com/smartwatch?_sort=price&_order=asc'
     )
     data = await res.json()
     displayCharacters(data)
@@ -44,7 +44,7 @@ const loadDataLowToHigh = async () => {
 const loadDataHighToLow = async () => {
   try {
     const res = await fetch(
-      'https://boatdatabase.herokuapp.com/smartwatch?_sort=price&_order=desc'
+      'https://boat-databse.herokuapp.com/smartwatch?_sort=price&_order=desc'
     )
     data = await res.json()
     displayCharacters(data)
@@ -57,7 +57,7 @@ const loadDataHighToLow = async () => {
 
 const loadData = async () => {
   try {
-    const res = await fetch('https://boatdatabase.herokuapp.com/smartwatch')
+    const res = await fetch('https://boat-databse.herokuapp.com/smartwatch')
     data = await res.json()
     displayCharacters(data)
   } catch (err) {

@@ -30,7 +30,7 @@ sort_btn.addEventListener('click', function () {
 const loadDataLowToHigh = async () => {
   try {
     const res = await fetch(
-      'https://boatdatabase.herokuapp.com/homeaudio?_sort=price&_order=asc'
+      'https://boat-databse.herokuapp.com/homeaudio?_sort=price&_order=asc'
     )
     data = await res.json()
     displayCharacters(data)
@@ -42,7 +42,7 @@ const loadDataLowToHigh = async () => {
 const loadDataHighToLow = async () => {
   try {
     const res = await fetch(
-      'https://boatdatabase.herokuapp.com/homeaudio?_sort=price&_order=desc'
+      'https://boat-databse.herokuapp.com/homeaudio?_sort=price&_order=desc'
     )
     data = await res.json()
     displayCharacters(data)
@@ -55,7 +55,7 @@ const loadDataHighToLow = async () => {
 
 const loadData = async () => {
   try {
-    const res = await fetch('https://boatdatabase.herokuapp.com/homeaudio')
+    const res = await fetch('https://boat-databse.herokuapp.com/homeaudio')
     data = await res.json()
     displayCharacters(data)
   } catch (err) {

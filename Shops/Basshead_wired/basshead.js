@@ -19,7 +19,7 @@ async function loadDataLowToHigh() {
   products.innerHTML = ''
   try {
     fetch(
-      'https://boatdatabase.herokuapp.com/basshead_products?_sort=curr_price&_order=asc'
+      'https://boat-databse.herokuapp.com/basshead_products?_sort=curr_price&_order=asc'
     )
       .then((response) => response.json())
       .then((result) => displayData(result))
@@ -33,7 +33,7 @@ async function loadDataHighToLow() {
   products.innerHTML = ''
   try {
     fetch(
-      'https://boatdatabase.herokuapp.com/basshead_products?_sort=curr_price&_order=desc'
+      'https://boat-databse.herokuapp.com/basshead_products?_sort=curr_price&_order=desc'
     )
       .then((response) => response.json())
       .then((result) => displayData(result))
@@ -44,7 +44,7 @@ async function loadDataHighToLow() {
 
 async function loadData() {
   try {
-    fetch('https://boatdatabase.herokuapp.com/basshead_products')
+    fetch('https://boat-databse.herokuapp.com/basshead_products')
       .then((res) => res.json())
       .then((res) => displayData(res))
   } catch (err) {

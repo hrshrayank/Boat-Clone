@@ -31,7 +31,7 @@ sort_btn.addEventListener('click', function () {
 const loadDataLowToHigh = async () => {
   try {
     const res = await fetch(
-      'http://localhost:3000/airdopes?_sort=price&_order=asc'
+      'https://boat-databse.herokuapp.com/airdopes?_sort=price&_order=asc'
     )
     data = await res.json()
     displayCharacters(data)
@@ -43,7 +43,7 @@ const loadDataLowToHigh = async () => {
 const loadDataHighToLow = async () => {
   try {
     const res = await fetch(
-      'http://localhost:3000/airdopes?_sort=price&_order=desc'
+      'https://boat-databse.herokuapp.com/airdopes?_sort=price&_order=desc'
     )
     data = await res.json()
     displayCharacters(data)
@@ -56,7 +56,7 @@ const loadDataHighToLow = async () => {
 
 const loadData = async () => {
   try {
-    const res = await fetch('https://boatdatabase.herokuapp.com/airdopes')
+    const res = await fetch('https://boat-databse.herokuapp.com/airdopes')
     data = await res.json()
     displayCharacters(data)
   } catch (err) {
