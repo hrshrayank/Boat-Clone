@@ -12,15 +12,15 @@
 </head>
 <body>
 
-    <div id="container">
+    <div id="container" style="z-index: 0;">
         <!-- Navbar starting -->
-        <nav>
+        <nav style="z-index: 999999;">
         
             <div class="logo"><a href="/index.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x.png?v=1600753267"></a></div>
     
             <div class="navbar_categories">
                 <span class="shop">Shop &#9662</span>
-                <div class="display_shop_categories">
+                <div class="display_shop_categories" style="z-index: 9999999;">
                     <a href="/Shops/AirDops/airdopes.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/category_01_360x.png?v=1602142415"></a>
                     <a href="/Shops/Rockers/rock.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/category_02_360x.png?v=1602142415"></a>
                     <a href="/Shops/Basshead_wired/basshead.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/category_03_360x.png?v=1602142415"></a>
@@ -58,7 +58,7 @@
         </nav>
         <!-- Navbar end -->
 
-        <div class="content">
+        <div class="content" style="z-index: 0;">
             
             <p>Home/Wired Headphones</p>
             <div class="title">
@@ -66,10 +66,10 @@
                 <div class="sort">
                     <div class="sort_btn" style="margin-top: 16px; cursor: pointer;" id="sort_btn">Sort by</div>
                     <div class="line2"></div>
-                    <select id="sort_order" style="margin-top: 15px;">
+                    <select id="sort_order" style="margin-top: 15px; z-index: 0;">
                         <option value="featured">Featured</option>
                         <option value="low_to_high">Price, low to high</option>
-                        <option value="high_to_low">Price, high to low</option>
+                        <!-- <option value="high_to_low">Price, high to low</option> -->
                     </select>
                 </div>
             </div>

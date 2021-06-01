@@ -126,11 +126,12 @@ var checkout = document.createElement("div")
 checkout.textContent = "CHECKOUT"
 checkout.className = "checkout"
 checkout.id = "checkout"
+// checkout.addEventListener("click", function)
 
 display.append(checkout)
 
 let goBack = document.getElementById("checkout")
 goBack.addEventListener("click", function() {
-    location = "basshead.html"
+    location = "./basshead.html"
 })
 }

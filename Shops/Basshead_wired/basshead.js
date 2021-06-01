@@ -9,9 +9,10 @@ sort_btn.addEventListener('click', function () {
     loadData()
   } else if (select_op.value == 'low_to_high') {
     loadDataLowToHigh()
-  } else if (select_op.value == 'high_to_low') {
-    loadDataHighToLow()
-  }
+  } 
+  // else if (select_op.value == 'high_to_low') {
+  //   loadDataHighToLow()
+  // }
 })
 
 async function loadDataLowToHigh() {
@@ -28,19 +29,19 @@ async function loadDataLowToHigh() {
   }
 }
 
-async function loadDataHighToLow() {
-  let products = document.getElementById('products')
-  products.innerHTML = ''
-  try {
-    fetch(
-      'https://boat-databse.herokuapp.com/basshead_products?_sort=curr_price&_order=desc'
-    )
-      .then((response) => response.json())
-      .then((result) => displayData(result))
-  } catch (err) {
-    console.log('Error occurred ' + err)
-  }
-}
+// async function loadDataHighToLow() {
+//   let products = document.getElementById('products')
+//   products.innerHTML = ''
+//   try {
+//     fetch(
+//       'https://boat-databse.herokuapp.com/basshead_products?_sort=curr_price&_order=desc'
+//     )
+//       .then((response) => response.json())
+//       .then((result) => displayData(result))
+//   } catch (err) {
+//     console.log('Error occurred ' + err)
+//   }
+// }
 
 async function loadData() {
   try {
