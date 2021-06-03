@@ -127,12 +127,21 @@ var checkout = document.createElement("div")
 checkout.textContent = "CHECKOUT"
 checkout.className = "checkout"
 checkout.id = "checkout"
+checkout.style.background = "grey"
+checkout.disabled = true
 // checkout.addEventListener("click", function)
 
 display.append(checkout)
 
-let goBack = document.getElementById("checkout")
-goBack.addEventListener("click", function() {
+if(store_details_obj.length == 0) {
+    checkout.disabled = true
+} else {
+    checkout.removeAttribute("disabled")
+    checkout.style.background = "red"
+    let goBack = document.getElementById("checkout")
+    goBack.addEventListener("click", function() {
     location = "./bill.html"
 })
 }
+}
+
