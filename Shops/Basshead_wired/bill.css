@@ -1,0 +1,281 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI";
+}
+
+.container {
+    height: 980px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left_part {
+    width: 52%;
+    height: 100%;
+    padding-left: 50px;
+}
+
+.logo_msg {
+    height: 150px;
+    width: 94%;
+    /* border: 1px solid blue; */
+    margin-top: 40px;
+}
+
+.logo_msg img {
+    height: 70px;
+}
+
+.logo_msg div {
+    /* border: 1px solid black; */
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    background-color: #FF0000;
+    border-radius: 5px;
+    height: 45px;
+}
+
+.logo_msg div p {
+    color: white;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+}
+
+
+.user_details {
+    height: 550px;
+    width: 90%;
+    /* border: 1px solid green; */
+    margin-top: 40px;
+    background-color: #FAFAFA;
+    padding: 10px 15px;
+}
+
+.user_details h2 {
+    font-size: 26px;
+    color: #333333;
+    margin-bottom: 0px;
+}
+
+.user_details input {
+    height: 45px;
+    font-size: 16px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 98%;
+    margin-top: 20px;
+}
+
+.names {
+    display: flex;
+    justify-content: space-between;
+}
+
+.names input {
+    width: 330px;
+}
+
+.user_details select {
+    height: 35px;
+    margin-top: 20px;
+    width: 250px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.pay_btn {
+    width: 92%;
+    height: 150px;
+    /* border: 1px solid black; */
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pay_btn div:first-child {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.pay_btn div:first-child:hover {
+    text-decoration: underline;
+}
+
+.pay_btn button {
+    height: 50px;
+    width: 250px;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    background-color: #b6b6b6;
+    border: none;
+    cursor: pointer;
+}
+
+
+.right_part {
+    width: 43%;
+    height: 100%;
+    /* border: 1px solid green; */
+    padding-top: 50px;
+    background-color: #f9f9f9;
+}
+
+
+
+/* Dynamically loading final bill */
+.display {
+    padding-top: 50px;
+    background-color: #acacac;
+}
+
+
+.cart_product_display {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 6px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.bill_img {
+    height: 80px;
+    width: 80px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bill_img img {
+    height: 75px;
+    object-fit: cover;
+}
+
+.total_bill {
+    margin-top: 50px;
+}
+
+.name_color {
+    display: flex;
+    flex-direction: column;
+}
+
+.name_color div:first-child p {
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #323232;
+}
+
+.color_price {
+    display: flex;
+    align-items: center;
+}
+
+.color_price div:nth-child(2) p, .quantity {
+    color: #717171;
+}
+
+.prod_color {
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.total_cost {
+    color: #323232;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.line_total {
+    margin-left: 20px;
+    margin-top: 40px;
+    height: 1px;
+    width: 94%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.total_bill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.total_bill div:first-child {
+    font-weight: lighter;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    /* margin-top: 50px; */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    text-align: center;
+    height: 300px;
+  }
+
+  .modal-content img{
+    height: 180px;
+  }
+
+  .modal-content p {
+      font-size: 34px;
+  }
+  
+  /* The Close Button */
+  /* .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold; */
+  /* } */
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }

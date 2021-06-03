@@ -132,6 +132,6 @@ display.append(checkout)
 
 let goBack = document.getElementById("checkout")
 goBack.addEventListener("click", function() {
-    location = "./basshead.html"
+    location = "./bill.html"
 })
 }
