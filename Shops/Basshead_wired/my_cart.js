@@ -119,7 +119,8 @@ for(let i=0 ; i<store_details_obj.length ; i++) {
     let val = Number(price.innerHTML)
     sum = sum + val
 }
-console.log(sum)
+// console.log(sum)
+sum = sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")  //to add comma for number
 tot.innerHTML = "Total: Rs. " + sum
 
 var checkout = document.createElement("div")
