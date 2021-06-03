@@ -1,5 +1,16 @@
 window.addEventListener('load', loadData)
 
+let no_of_items = document.getElementById("no_of_items")
+let store_details = localStorage.getItem("cart_items")
+
+if(store_details == null) {
+  store_details_obj = []
+} else {
+  store_details_obj = JSON.parse(store_details)
+}
+
+no_of_items.textContent = store_details_obj.length
+
 let sort_btn = document.getElementById('sort_btn')
 sort_btn.addEventListener('click', function () {
   let select_op = document.getElementById('sort_order')

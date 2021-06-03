@@ -471,3 +471,20 @@ marquee {
     cursor: pointer;
 }
 
+.no_of_items {
+    height: 15px;
+    width: 15px;
+    font-size: 13px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    color: white;
+    right: 130px;
+    top: 50px;
+    font-weight: bold;
+}
+
