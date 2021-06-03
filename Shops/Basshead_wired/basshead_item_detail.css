@@ -101,7 +101,7 @@ nav {
 .display_shop_categories {
     display: none;
     margin-top: 50px;
-    margin-left: -31.5%;
+    margin-left: -31%;
     position: absolute;
     background-color: #1E1E1E;
     transition: 0.5s;
@@ -559,4 +559,21 @@ marquee {
 .download_links img {
     margin-right: 10px;
     cursor: pointer;
+}
+
+.no_of_items {
+    height: 15px;
+    width: 15px;
+    font-size: 13px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    color: white;
+    right: 130px;
+    top: 50px;
+    font-weight: bold;
 }

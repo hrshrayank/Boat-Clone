@@ -102,17 +102,18 @@ nav {
 .display_shop_categories {
     display: none;
     margin-top: 50px;
-    margin-left: -30%;
+    margin-left: -31.2%;
     position: absolute;
     background-color: #1E1E1E;
     transition: 0.5s;
     width: 100%;
+    z-index: 99999;
 }
 
 .display_shop_categories img {
     width: 295px;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 50px;
     transition: 0.5s;
 }
 

@@ -1,6 +1,17 @@
 window.addEventListener('load', loadPage)
 let load = document.getElementById('load')
 
+let no_of_items = document.getElementById("no_of_items")
+let store_details = localStorage.getItem("cart_items")
+
+if(store_details == null) {
+  store_details_obj = []
+} else {
+  store_details_obj = JSON.parse(store_details)
+}
+
+no_of_items.textContent = store_details_obj.length
+
 // Loader animation
 function loadPage() {
   let gif = document.createElement('img')
