@@ -87,14 +87,14 @@ marquee {
 
 #div_img_slider img {
   display: flex;
-  margin-left: 580px;
+  margin-left: 600px;
   margin-top: -320px;
   width: 300px;
   height: 400px;
 }
 
 #div_img_slider .img2 {
-  margin-left: 900px;
+  margin-left: 950px;
   margin-top: -400px;
 }
 
@@ -277,7 +277,7 @@ marquee {
 
 .largest_brand_img {
   margin-top: 30px;
-  margin-left: 15px;
+  margin-left: 105px;
   margin-bottom: 30px;
 }
 
@@ -324,7 +324,6 @@ marquee {
   position: absolute;
   margin-top: 200px;
   font-weight: bold;
-  margin-left: 20px;
 }
 
 .name {
@@ -339,7 +338,7 @@ marquee {
 
 .redbox_img img {
   margin-top: -130px;
-  z-index: 1;
+  z-index: 999999;
   margin-left: -850px;
 }
 
@@ -348,7 +347,7 @@ marquee {
 }
 
 .red_squares:hover {
-  transform: translateY(15px);
+  transform: translateY(10px);
 }
 
 /* blog part */
@@ -560,4 +559,21 @@ marquee {
 .download_links img {
   margin-right: 10px;
   cursor: pointer;
+}
+
+.no_of_items {
+  height: 15px;
+  width: 15px;
+  font-size: 13px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  color: white;
+  left: 1370px;
+  top: 55px;
+  font-weight: bold;
 }
