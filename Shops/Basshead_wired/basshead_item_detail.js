@@ -292,7 +292,7 @@ function changeColor1() {
   display()
 
   function display() {
-    // let container = document.getElementById("container")
+    let container = document.getElementById("container")
     container.style.opacity = 1
     container.prepend(load)
     load.innerHTML = ''
